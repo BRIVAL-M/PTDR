@@ -1,4 +1,8 @@
 /*Revoir les couleurs et les fonts*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     /* background-color: #f3f3f3; */
@@ -16,7 +20,7 @@ body {
     justify-content: space-between;
     height: 550px;
     max-width: 570px;
-    margin: 30px auto;
+    margin: 130px auto;
     padding: 20px;
     /* background-color: #fff; */
     /* background: #d88be5; */
@@ -138,13 +142,33 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 640px) {
 
-@media screen and (max-width: 426px) {
+    body {
+        padding-inline: 2%;
+    }
+}
+
+@media screen and (max-width: 435px) {
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+
+    }
+
     .btn-read {
         margin-top: 10%;
     }
 
+    .container {
+        margin: 0px;
+    }
+
     .container__btn {
         justify-content: center;
+        flex-direction: column;
     }
 }
